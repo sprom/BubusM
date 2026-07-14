@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ბუბუს მწვადი — ქართული სამწვადე თბილისში | ბელიაშვილი</title>
-<meta name="description" content="ბუბუს მწვადი — ნახშირზე შემწვარი ღორის და ქათმის მწვადი აკაკი ბელიაშვილის ქუჩაზე, თბილისში. შეკვეთა Glovo, Wolt და Bolt Food-ით.">
+<title>ბუბუს მწვადი თბილისში — ქართული სამწვადე ბელიაშვილზე</title>
+<meta name="description" content="ბუბუს მწვადი — ქართულად მომზადებული მწვადი თბილისში, აკაკი ბელიაშვილის ქუჩაზე. ნახშირზე შემწვარი ღორის და ქათმის მწვადი, ადგილზე ჭამა და მიწოდება Glovo, Wolt და Bolt Food-ით.">
 <link rel="canonical" href="https://bubusmtsvadi.ge/">
 
 <!-- hreflang: tells Google which page serves which language for this business -->
@@ -16,8 +16,8 @@
 
 <meta property="og:type" content="restaurant">
 <meta property="og:site_name" content="Bubus Mtsvadi">
-<meta property="og:title" content="ბუბუს მწვადი — ქართული სამწვადე თბილისში | ბელიაშვილი">
-<meta property="og:description" content="ბუბუს მწვადი — ნახშირზე შემწვარი ღორის და ქათმის მწვადი აკაკი ბელიაშვილის ქუჩაზე, თბილისში. შეკვეთა Glovo, Wolt და Bolt Food-ით.">
+<meta property="og:title" content="ბუბუს მწვადი თბილისში — ქართული სამწვადე ბელიაშვილზე">
+<meta property="og:description" content="ბუბუს მწვადი — ქართულად მომზადებული მწვადი თბილისში, აკაკი ბელიაშვილის ქუჩაზე. ნახშირზე შემწვარი ღორის და ქათმის მწვადი, ადგილზე ჭამა და მიწოდება Glovo, Wolt და Bolt Food-ით.">
 <meta property="og:image" content="images/mtsvadi-bread.jpg">
 <meta property="og:url" content="https://bubusmtsvadi.ge/">
 <meta property="og:locale" content="ka_GE">
@@ -35,11 +35,13 @@
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
+  "@id": "https://bubusmtsvadi.ge/#restaurant",
   "name": "Bubus Mtsvadi",
+  "url": "https://bubusmtsvadi.ge/",
   "alternateName": ["ბუბუს მწვადი", "Бубус Мцвади"],
   "image": "images/mtsvadi-bread.jpg",
   "logo": "images/logo-dark.png",
-  "servesCuisine": "Georgian",
+  "servesCuisine": ["Georgian cuisine", "Charcoal-grilled mtsvadi"],
   "priceRange": "$$",
   "telephone": "+995555952505",
   "email": "bubusmtsvadi@gmail.com",
@@ -56,7 +58,21 @@
   },
   "hasMap": "https://maps.app.goo.gl/jyAPs7F5S4fDX3fc8",
   "menu": "https://bubusmtsvadi.ge/#menu",
-  "acceptsReservations": "True",
+  "acceptsReservations": true,
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "10:00",
+    "closes": "23:00"
+  }],
   "inLanguage": "ka"
 }
 </script>

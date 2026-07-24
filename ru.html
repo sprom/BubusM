@@ -176,16 +176,32 @@
 
   <section class="gallery" id="gallery">
     <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Галерея</span>
-        <h2>С нашего гриля</h2>
-      </div>
-      <div class="gallery-grid">
-        <a href="images/mtsvadi-bread.jpg" target="_blank" rel="noopener"><img src="images/mtsvadi-bread.jpg" alt="Свиное мцвади в лаваше"></a>
-        <a href="images/mtsvadi-platter.jpg" target="_blank" rel="noopener"><img src="images/mtsvadi-platter.jpg" alt="Куриное мцвади на блюде"></a>
-        <a href="images/mtsvadi-bowl.jpg" target="_blank" rel="noopener"><img src="images/mtsvadi-bowl.jpg" alt="Мцвади с красным луком в миске"></a>
-      </div>
-    </div>
+   <div class="section-head">
+    <h2>Меню</h2>
+    <span class="eyebrow">Цены на продукцию при самовывозе</span>
+</div>
+
+<div class="gallery-grid">
+
+    <div class="gallery-item"><img src="images/menu/კახური ღორის მწვადი 16 ლარი.jpg" alt="Кахетинский свиной шашлык 16 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/კახური ღორის მწვადი პურში 15 ლარი.jpg" alt="Кахетинский свиной шашлык в хлебе 15 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/კიტრი da პომიდვრის სალათი 8 ლარი.png" alt="Салат из огурцов и помидоров 8 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/პური 1 ლარი.jpg" alt="Хлеб 1 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/ქათმის მწვადი 13 ლარი.jpg" alt="Куриный шашлык 13 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/ქათმის მწვადი პურში 14 ლარი.jpg" alt="Куриный шашлык в хлебе 14 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/ღორის ნეკნის მწვადი 18 ლარი.jpg" alt="Шашлык из свиных рёбер 18 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/საწებელი 1,50 ლარი.jpg" alt="Соус сацебели 1,50 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/ტყემალი 1,50 ლარი.jpg" alt="Соус ткемали 1,50 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/მაშარაფი 1,50 ლარი.jpg" alt="Соус машараби 1,50 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/კოკა კოლა ბოთლით 2 ლარი.jpg" alt="Кока-Кола бутылка 2 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/კოკა კოლა ქილის 2 ლარი.jpg" alt="Кока-Кола банка 2 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/სპრაიტი ბოთლის 2 ლარი.jpg" alt="Спрайт бутылка 2 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/სპრაიტი ქილის 2 ლარი.jpg" alt="Спрайт банка 2 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/ფანტა ბოთლის 2 ლარი.jpg" alt="Фанта бутылка 2 GEL"></div>
+    <div class="gallery-item"><img src="images/menu/ფანტა ქილის 2 ლარი.jpg" alt="Фанта банка 2 GEL"></div>
+
+</div>
+</div>
   </section>
 
   <section id="delivery">
@@ -256,7 +272,15 @@
       </div>
     </div>
   </footer>
-
+ <script>
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      const img = item.querySelector('img');
+      const title = document.createElement('div');
+      title.className = 'gallery-title';
+      title.textContent = img.alt;
+      item.prepend(title);
+    });
+  </script>
 </body>
 
 </html>

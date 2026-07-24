@@ -77,27 +77,27 @@
   "inLanguage": "en"
 }
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5BJ2S99Y8P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5BJ2S99Y8P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-5BJ2S99Y8P');
-</script>
+    gtag('config', 'G-5BJ2S99Y8P');
+  </script>
 </head>
 
 <body class="home" id="home">
 
-<header>
-  <nav>
-    <a href="#home" class="brand">
-      <img src="images/logo-dark.png" alt="Bubus Mtsvadi">
-    </a>
-    <div class="nav-links">
-      <a href="#story">Story</a>
-      <a href="#menu">Menu</a>
+  <header>
+    <nav>
+      <a href="#home" class="brand">
+        <img src="images/logo-dark.png" alt="Bubus Mtsvadi">
+      </a>
+      <div class="nav-links">
+        <a href="#story">Story</a>
+        <a href="#menu">Menu</a>
         <a href="#gallery">Gallery</a>
         <a href="#delivery">Delivery</a>
         <a href="#visit">Visit</a>
@@ -176,15 +176,31 @@
 
   <section class="gallery" id="gallery">
     <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Gallery</span>
-        <h2>From the grill</h2>
-      </div>
-      <div class="gallery-grid">
-        <a href="images/mtsvadi-bread.jpg" target="_blank" rel="noopener"><img src="images/mtsvadi-bread.jpg" alt="Pork mtsvadi sandwich"></a>
-        <a href="images/mtsvadi-platter.jpg" target="_blank" rel="noopener"><img src="images/mtsvadi-platter.jpg" alt="Chicken mtsvadi platter"></a>
-        <a href="images/mtsvadi-bowl.jpg" target="_blank" rel="noopener"><img src="images/mtsvadi-bowl.jpg" alt="Mtsvadi bowl with red onion"></a>
-      </div>
+    <div class="section-head">
+      <h2>Menu</h2>
+      <span class="eyebrow">Product prices for takeaway</span>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item"><img src="images/menu/კახური ღორის მწვადი 16 ლარი.jpg" alt="Kakhetian Pork BBQ 16 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/კახური ღორის მწვადი პურში 15 ლარი.jpg" alt="Kakhetian Pork BBQ in Bread 15 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/კიტრი da პომიდვრის სალათი 8 ლარი.png" alt="Cucumber and Tomato Salad 8 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/პური 1 ლარი.jpg" alt="Bread 1 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/ქათმის მწვადი 13 ლარი.jpg" alt="Chicken BBQ 13 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/ქათმის მწვადი პურში 14 ლარი.jpg" alt="Chicken BBQ in Bread 14 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/ღორის ნეკნის მწვადი 18 ლარი.jpg" alt="Pork Ribs BBQ 18 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/საწებელი 1,50 ლარი.jpg" alt="Satsiteli Sauce 1.50 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/ტყემალი 1,50 ლარი.jpg" alt="Tkemali Sauce 1.50 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/მაშარაფი 1,50 ლარი.jpg" alt="Masharafi Sauce 1.50 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/კოკა კოლა ბოთლით 2 ლარი.jpg" alt="Coca-Cola Bottle 2 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/კოკა კოლა ქილის 2 ლარი.jpg" alt="Coca-Cola Can 2 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/სპრაიტი ბოთლის 2 ლარი.jpg" alt="Sprite Bottle 2 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/სპრაიტი ქილის 2 ლარი.jpg" alt="Sprite Can 2 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/ფანტა ბოთლის 2 ლარი.jpg" alt="Fanta Bottle 2 GEL"></div>
+      <div class="gallery-item"><img src="images/menu/ფანტა ქილის 2 ლარი.jpg" alt="Fanta Can 2 GEL"></div>
+
+    </div>
     </div>
   </section>
 
@@ -255,7 +271,15 @@
       </div>
     </div>
   </footer>
-
+ <script>
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      const img = item.querySelector('img');
+      const title = document.createElement('div');
+      title.className = 'gallery-title';
+      title.textContent = img.alt;
+      item.prepend(title);
+    });
+  </script>
 </body>
 
 </html>
